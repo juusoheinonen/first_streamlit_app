@@ -37,4 +37,5 @@ streamlit.dataframe(my_data_rows)
 
 # Ask for new fruit and add to fruit load list
 fruit_choice_to_snowflake = streamlit.text_input('What fruit would you like to add','')
-streamlit.write('Thanks for adding', fruit_choice_to_snowflake)
+if len(fruit_choice_to_snowflake) > 0:
+    streamlit.write('Thanks for adding', fruit_choice_to_snowflake)
